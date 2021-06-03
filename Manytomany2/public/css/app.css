@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 22px;
+  text-decoration: none;
+  background-color: #c7c7c7;
+}
+
+body header {
+  text-align: center;
+}
+
+body main .text-center {
+  text-align: center;
+  padding-top: 20px;
+}
+
+body main ul {
+  display: flex;
+  list-style-type: none;
+  width: 45%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+body main ul li {
+  width: 200px;
+  border: 1px solid black;
+}
+
+body main ul li h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+body main ul li div {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+body main .button-center {
+  text-align: center;
+  padding-top: 40px;
+}
+
+body main .button-center .home {
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #398eff;
+  color: black;
+  text-align: center;
+}
+
+body main .button-center .home:hover {
+  background-color: #ffb967;
+}
+
+body main ul.edit {
+  display: flex;
+  list-style-type: none;
+  width: 20%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+body main ul.edit li {
+  width: 200px;
+  border: 1px solid black;
+}
+
+body main ul.edit li h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+body main ul.edit li div {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+body main ul.edit li input {
+  font-size: 18px;
+}
+
+body main ul.employee {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+body main ul.employee h1 {
+  text-align: center;
+}
+
+body main ul.employee li {
+  width: 200px;
+  border: 1px solid black;
+}
+
+body main ul.employee li h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+body main ul.employee li div {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
