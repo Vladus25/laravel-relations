@@ -62,58 +62,58 @@ body main .button-center .home:hover {
   background-color: #ffb967;
 }
 
-body main ul.edit {
+body main ul.create-edit {
   display: flex;
   list-style-type: none;
-  width: 20%;
+  width: 55%;
   margin: auto;
   padding-top: 50px;
 }
 
-body main ul.edit li {
+body main ul.create-edit li {
   width: 200px;
   border: 1px solid black;
 }
 
-body main ul.edit li h2 {
+body main ul.create-edit li h2 {
   text-align: center;
   border-bottom: 1px solid black;
 }
 
-body main ul.edit li div {
+body main ul.create-edit li div {
   text-align: center;
   border-bottom: 1px solid black;
 }
 
-body main ul.edit li input {
+body main ul.create-edit li input {
   font-size: 18px;
 }
 
-body main ul.employee {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
-  padding-top: 30px;
+body main ul.create-edit li select {
+  width: 195px;
 }
 
-body main ul.employee h1 {
+body main ul.create-edit li #brand_id {
+  font-size: 18px;
+}
+
+body main .button-center {
   text-align: center;
+  padding-top: 40px;
 }
 
-body main ul.employee li {
-  width: 200px;
+body main .button-center .home {
+  font-size: 20px;
+  text-decoration: none;
   border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #398eff;
+  color: black;
+  text-align: center;
 }
 
-body main ul.employee li h2 {
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-
-body main ul.employee li div {
-  text-align: center;
-  border-bottom: 1px solid black;
+body main .button-center .home:hover {
+  background-color: #ffb967;
 }
 

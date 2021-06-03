@@ -5,8 +5,8 @@
       <form method="POST" action="{{ route('store') }}">
         @csrf
         @method('POST')
-        <h1>Create New Car:</h1>
-        <ul>
+        <h1 class="text-center">Create New Car:</h1>
+        <ul class="create-edit">
 
           <li>
             <h2>Name</h2>
@@ -47,9 +47,7 @@
             <div>
               <select id="pilots_id[]" name="pilots_id[]" required multiple>
                 @foreach ($pilots as $pilot)
-                  <option value="{{ $pilot -> id }}">
-                    {{$pilot -> firstname}}
-                    {{$pilot -> lastname}}
+                  <option value="{{ $pilot -> id }}"> {{$pilot -> name}} {{$pilot -> lastname}}
                   </option>
                 @endforeach
               </select>
@@ -57,7 +55,12 @@
           </li>
 
         </ul>
-        <button type="submit" class="home">Ad Car</button>
+
+        <div class="button-center">
+          <button type="submit" class="home">Ad Car</button>
+          <a class="home" href="{{route('home')}}">List Cars</a>
+        </div>
+
       </form>
     </div>
   </main>

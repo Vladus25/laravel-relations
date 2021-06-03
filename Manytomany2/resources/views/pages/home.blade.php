@@ -53,7 +53,21 @@
         @endforeach
       </li>
 
+      <li>
+        <h2>Edit</h2>
+        @foreach ($cars as $car)
+          <div>
+            <a href="{{route('edit', $car -> id)}}">
+              <i class="edit fas fa-user-edit"></i>
+            </a>
+          </div>
+        @endforeach
+      </li>
+
     </ul>
-    <a href="{{route('create')}}">New Car</a>
+
+    <div class="button-center">
+      <a class="home" href="{{route('create')}}">New Car</a>
+    </div>
   </main>
 @endsection
