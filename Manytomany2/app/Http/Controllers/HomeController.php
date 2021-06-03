@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Car;
+use App\Pilot;
+use App\Brand;
 
 class HomeController extends Controller
 {
@@ -21,20 +23,28 @@ class HomeController extends Controller
 
   public function create() {
 
-    return view ('pages.create');
+    $brands = Brand::all();
+    $pilots = Pilot::all();
+    return view('pages.create', compact('brands', 'pilots'));
   }
 
   public function store(Request $request) {
 
-    $validate = $request -> validate ([
-      'team1' => 'required|max:128',
-      'team2' => 'required|max:128',
-      'point1' => 'required|numeric',
-      'point2' => 'required|numeric',
-      'result' => 'required|numeric',
+    $validate = $request -> validate([
+      'name' => 'required|string|min:3',
+      'model' => 'required|string|min:3',
+      'kw' => 'required|integer|min:10|max:9000',
     ]);
 
-    $match = Match::create($validate);
-    return redirect() -> route('match', $match -> id);
+    $brand = Brand::findorFail($request -> get('brand_id'));
+
+    $car = Car::make($validate);
+    $car -> brand() -> associate($brand);
+    $car -> save();
+
+    $car -> pilots() -> attach($request -> get('pilots_id'));
+    $car -> save();
+
+    return redirect() -> route('home');
   }
 }

@@ -1,6 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
 
+  {{-- Pilot <-N----M-> Car <-N----1-> Brand --}}
   <main>
 
     <ul>
