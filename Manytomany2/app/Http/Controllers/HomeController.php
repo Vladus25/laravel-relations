@@ -84,4 +84,21 @@ class HomeController extends Controller
 
     return redirect() -> route('car', $car -> id);
   }
+
+  // public function destroy($id) {
+  //
+  //   // $car = Car::findorFail($id);
+  //   // $car -> delete();
+  //
+  //   $car = Car::findorFail($id);
+  //   $car->brand()->delete();
+  //   $car->pilots()->delete();
+  //   $car->delete();
+  //
+  //   // $user = User::find($id);
+  //   // $user->tasks()->delete();
+  //   // $user->delete();
+  //
+  //   return redirect() -> route('home');
+  // }
 }

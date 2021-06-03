@@ -11,3 +11,5 @@ Route::post('/store/car', 'HomeController@store') -> name('store');
 
 Route::get('/edit/car/{id}', 'HomeController@edit') -> name('edit');
 Route::post('/update/car/{id}', 'HomeController@update') -> name('update');
+
+// Route::get('/destroy/{id}', 'HomeController@destroy') -> name('destroy');

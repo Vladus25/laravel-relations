@@ -64,6 +64,17 @@
         @endforeach
       </li>
 
+      <li>
+        <h2>Delete</h2>
+        @foreach ($cars as $car)
+          <div>
+            <a href="{{route('destroy', $car -> id)}}">
+              <i class="delete fas fa-user-slash"></i>
+            </a>
+          </div>
+        @endforeach
+      </li>
+
     </ul>
 
     <div class="button-center">

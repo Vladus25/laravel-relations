@@ -33,7 +33,7 @@
           <li>
             <h2>Brand</h2>
             <div>
-              <select id="brand_id" name="brand_id" required>
+              <select id="brand" name="brand_id" required>
                 <option selected disabled>Brand</option>
                 @foreach ($brands as $brand)
                   <option value="{{ $brand -> id }}"> {{$brand -> name}} {{$brand -> nationality}}
@@ -46,7 +46,7 @@
           <li>
             <h2>Pilots</h2>
             <div>
-              <select id="pilots_id[]" name="pilots_id[]" required multiple>
+              <select name="pilots_id[]" required multiple>
                 @foreach ($pilots as $pilot)
                   <option value="{{ $pilot -> id }}">
                     {{$pilot -> name}}
